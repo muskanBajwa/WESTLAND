@@ -5,6 +5,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .navbar a {
@@ -17,7 +18,9 @@
     font-size: 20px;
     font-weight: bold;
 }
-
+.navbar-brand img{
+    margin-right: 6px;
+}
 .navbar a:hover {
     background:#191970 ;
     color:#00BFFF ;
@@ -46,16 +49,12 @@
     font-size: 50px;
     font-weight: bold;
 }
-
-
-
 /*
 ...............................ourservices........................*/
 
 
 .ourservices{
-    padding: 100px 0px 60px;
-    height: 700px;
+    padding: 2rem 0;
 }
 
 .ourservices h1{
@@ -101,6 +100,7 @@
 /*.......................packages....................*/
 .packages{
     background-color: #00BFFF;
+    padding: 2rem 0;
 }
 
 .packages h1{
@@ -115,7 +115,7 @@
 /*......................Contact.....................*/
 
 .contactus{
-    padding: 100px 0px 60px;
+    padding: 2rem;
    
 }
 
@@ -203,4 +203,52 @@
 
 .footer h6{
     line-height: 50px;
+}
+@media screen and (max-width:780px){
+    body{
+        font-size: 14px;
+    }
+    button.btn.btn-primary.text-white.btn-lg {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+    .hearderset h2{
+        margin-bottom: 2rem;
+    }
+    .contactus h1,.hearderset h2,.hearderset h1,.packages h1,.ourservices h1 
+    {
+        font-size: 2rem;
+    }
+    img.img-fluid{
+        width: 300px;
+        margin: 2rem 0;
+    }
+    .rowsetting {
+        margin: 2rem 0px  !important;
+        margin-bottom: 0px!important;
+    }
+    .imgsetting {
+        background-color: #00BFFF;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+    }
+    .fa-3x {
+        padding-top: 10px;
+        font-size: 1.8em;
+        margin-top: 5px;
+    }
+    .rowsetting h2 {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    .packages p {
+        font-size: 1rem;
+    }
+    .footer {
+        height: 50px;
+        margin-top: -20px;
+        margin-bottom: 8px;
+    }
 }
